@@ -1,0 +1,414 @@
+body {
+    margin: 0px;
+    margin-bottom: -16px;
+    margin-top: -65px;
+}
+
+
+nav { /* nav miatt talán szarul kicsinyedik */ 
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+nav li:hover {
+    text-decoration: underline;
+  }
+
+  #kezdőlap li {
+    text-decoration: underline;
+  }
+
+
+nav ul {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    margin: 0 40px;
+    align-items:center;
+  }
+
+  
+li {
+    font-size: 20px;
+    font-weight:lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: 'Noto Sans' sans-serif;
+    white-space: nowrap;
+  }
+
+
+.menu li {
+    padding: 15px 30px;
+    font-size: 16px;
+}
+
+
+
+
+.logo img {
+    width: 90px;
+    padding-left: 30%;
+}
+
+
+
+.logo {
+    flex: 1;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20x;
+        margin-top: -10px;
+        position: sticky;
+        width: auto;
+    }
+    .toggle {
+        font-size: 30px;
+        display: none;
+        padding-top: 3%;
+        padding-right: 20%;
+    }
+}
+
+
+
+
+.menu.active, .toggle {
+    display: block;
+}
+
+.toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.h { 
+    width: 13%;
+    height: 2px;   
+    border: 0 none; 
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 68px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.btn {
+    background-color: #3D6CFC;
+    color: white;
+    width: 1700px;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: rgb(55, 55, 252)
+}
+
+.div-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.div-img {
+    position: relative;
+    top: 10px;
+}
+
+.test { 
+    position:absolute;
+    top: 120px;
+    padding-left: 20%;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-stretch: semi-condensed;
+    width: auto;
+}
+
+
+.test h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+
+.div-img2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.div-img2 {
+    position: relative;
+    top: 0;
+    bottom: auto;
+}
+
+
+.test2 {    
+    position: absolute;
+    bottom: 60px;
+    padding-left: 25%;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: auto;
+}
+
+
+.test2 i {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.7;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    justify-items: auto;
+}
+
+
+b {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+.div-img3 {
+    position: relative;
+    top: -4px;
+}
+
+.div-img3 img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+
+.test3 { 
+    position:absolute;
+    top: 35%;
+    padding-left: 23%;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight:300;
+    font-stretch: semi-condensed;
+}
+
+
+.test3 h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.blog {
+    background-color: black;
+    margin-top: -12px;
+    padding-top: 30px;
+
+}
+
+#blogfont {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+article {
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 55px;
+}
+
+.postcard {
+    background-color: white;
+    border-radius: 8px;
+    height: 480px;
+    width: 350px;
+    position: relative
+}
+
+
+.postcard img {
+    position: absolute;
+    width: 350px;
+    height: 210px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.posttext {
+    top: 260px;
+    padding-left: 20px;
+    position: relative;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: inherit;
+}
+
+.post-leírás {
+    padding-top: 10px;
+}
+
+
+
+
+.posttext h3 {
+    text-decoration: none;
+    color: #3D6CFC;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.olvass-tovább {
+    color: #CE0A0A;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.postdátum {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3em;
+    padding-bottom: 1px;
+    position: absolute; 
+
+}
+
+
+footer {
+    background-color: #171412;
+    color: #B4B4B4;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+
+.copyright {
+    padding-bottom: 18px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 29px;
+    padding-bottom: 10px;
+}
+
+.ikon img {
+    min-width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+#margin img {
+    margin: 10px 15px;
+}
+
+.ikon {
+    background-color: #948c8a;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    margin: 4px;
+    border-style: circle;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+}
+
+.ikon:hover {
+    background-color: #625c5c;
+}
+
+
+.back-video {
+    position: relative;
+    z-index: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+        .back-video {
+            width: 100%;
+            height: auto;
+        }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
